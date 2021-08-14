@@ -59,6 +59,9 @@ export function makeServer() {
           { users }
         );
       });
+
+      this.get("/users/:id");
+
       this.post("/users");
 
       this.namespace = ""; // Retorna o namespace para o padrão vazio p/ não impactar as rotas definidas no próprio next
